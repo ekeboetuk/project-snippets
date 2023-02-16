@@ -18,12 +18,25 @@
     <title>Registration Page | DevOps</title>
   </head>
   <body>
-    <div id="root">
-      <div class="flex--container">
+    <div class="nav--header">
+      <div class="container">
+        <img src="./devops-logo(1).svg" class="header--logo" />
+        <header class="header--text">DevOPS</header>
+        <ul class="nav">
+          <li><a href="#">Homepage</a></li>
+          <li><a href="#">Registration</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container">
         <div class="section--header">
           <h5>Membership Registration Form</h5>
         </div>
         <form class="registration--form">
+          <label for="firstname" class="colspan--two">Names</label>
           <input
             type="text"
             name="firstname"
@@ -36,12 +49,34 @@
             id="lastname"
             placeholder="Last Name"
           />
+          <label for="address" class="colspan--two">Contact</label>
           <input
             type="address"
             name="address"
             id="address"
-            placeholder="Contact Addresses"
-            class="flex-item-full"
+            placeholder="Address Line 1"
+            class="colspan--two"
+          />
+          <input
+            type="address"
+            name="address2"
+            id="address2"
+            placeholder="Address Line 2"
+            class="colspan--two"
+          />
+          <input type="text" name="city" id="city" placeholder="City" />
+          <input type="text" name="region" id="region" placeholder="Region" />
+          <input
+            type="text"
+            name="postcode"
+            id="postcode"
+            placeholder="Postal/Zip Code"
+          />
+          <input
+            type="text"
+            name="country"
+            id="country"
+            placeholder="Country"
           />
           <input
             type="email"
@@ -67,8 +102,13 @@
             id="password"
             placeholder="Confirm Password"
           />
-          <button class="button--primary">Submit Registeration</button>
+          <button class="button--primary colspan--two">
+            Submit Registeration
+          </button>
         </form>
+        <div class="form--footer">
+          <p>Already A Member? <a href="./login.html">Login Here</a></p>
+        </div>
       </div>
     </div>
   </body>
