@@ -30,7 +30,7 @@ body {
   height: 350px;
   padding: 0 30px;
   display: grid;
-  grid-template: 60px 60px 100px / 80%;
+  grid-template: 80px 50px 50px 100px / 80%;
   gap: 5px 10px;
   justify-content: center;
   align-content: center;
@@ -70,4 +70,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+ line-height: 1.5;
 }
