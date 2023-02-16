@@ -68,6 +68,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 5px;
 }
 
+.content {
+  margin: 40px
+}
+
 .section--header {
   background-color:#385d7f;
   color:#FFFFFF;
@@ -133,6 +137,7 @@ input {
   font-weight: 600;
   background-color: #385d7f;
   padding: 20px 40px;
+  margin-top: 20px;
   border: 0px;
   border-radius: 40px;
   color:#FFFFFF;
