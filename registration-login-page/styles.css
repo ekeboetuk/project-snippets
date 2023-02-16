@@ -160,3 +160,18 @@ input {
 .colspan--two {
   grid-column: 1 / span 2;
 }
+
+/*** Media Screen Layout **/
+@media screen and (max-width: 414px) {
+  .registration--form {
+    background-color: #ececec;
+    padding: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px 20px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0 0 0px 0px;
+  }
+}
