@@ -194,7 +194,7 @@ input[name="city"] {
 }
 
 /*** Media Screen Layout **/
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 600px) {
   .registration--form {
     background-color: #ececec;
     padding: 20px;
