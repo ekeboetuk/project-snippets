@@ -5,7 +5,6 @@
 }
 
 body {
-  padding: 20vh 0;
   background: rgba(255,255,255,0.9) url('./pattern-bg.png') repeat;
   background-size: 25%;
   background-blend-mode: lighten;
@@ -18,10 +17,54 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-.flex--container {
-  margin: 0 auto;
+.container {
   max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
   /**box-shadow: 0px 0px 3px 1px #d1d1d1;*/
+}
+
+.nav--header {
+  height: 80px;
+  background-color:#385d7f;
+  margin-bottom: 40px;
+}
+
+.nav--header .container {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header--logo {
+  max-width: 150px;
+}
+
+.header--text {
+  margin-right: auto;
+  color:rgb(237, 237, 237);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nav li:hover {
+  background-color: #2a4d6e;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 0.65rem;
+  padding: 0 5px;
 }
 
 .section--header {
