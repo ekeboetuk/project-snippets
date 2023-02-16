@@ -21,13 +21,13 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 980px;
   margin: 0 auto;
   padding: 0 20px;
-  /**box-shadow: 0px 0px 3px 1px #d1d1d1;*/
 }
 
 .nav--header {
   height: 80px;
   background-color:#385d7f;
   margin-bottom: 40px;
+  box-shadow: 0px 0px 3px 1px #d1d1d1;
 }
 
 .nav--header .container {
@@ -38,7 +38,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header--logo {
-  max-width: 150px;
+  max-width: 100px;
+  margin-right: 10px;
 }
 
 .header--text {
@@ -83,9 +84,10 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-flow: column;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-.loginform--content {
+.login--form--content {
   height: 300px;
   padding: 0 40px;
   display: flex;
@@ -114,6 +116,15 @@ input {
   border-radius: 40px;
   padding: 0 40px;
   font-style: italic;
+}
+
+.form--footer {
+  text-align: center;
+}
+
+.form--footer a {
+  text-decoration: none;
+  color: #CCCCCC;
 }
 
 .button--primary {
