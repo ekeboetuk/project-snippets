@@ -15,12 +15,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Ubuntu:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <title>Registration Page | DevOps</title>
   </head>
   <body>
     <div class="nav--header">
       <div class="container">
-        <img src="./devops-logo(1).svg" class="header--logo" />
+        <img src="./devops-logo.svg" class="header--logo" />
         <header class="header--text">DevOPS</header>
         <ul class="nav">
           <li><a href="./login.html">Homepage</a></li>
@@ -36,7 +40,10 @@
           <h5>Membership Registration Form</h5>
         </div>
         <form class="registration--form">
-          <label for="firstname" class="colspan--two">Names</label>
+          <label for="firstname" class="colspan--two">
+            <i class="fa-solid fa-user"></i>
+            Names
+          </label>
           <input
             type="text"
             name="firstname"
@@ -49,7 +56,10 @@
             id="lastname"
             placeholder="Last Name"
           />
-          <label for="address" class="colspan--two">Contact</label>
+          <label for="email" class="colspan--two">
+            <i class="fa-solid fa-id-card"></i>
+            Contact
+          </label>
           <input
             type="email"
             name="email"
@@ -90,7 +100,10 @@
             id="country"
             placeholder="Country"
           />
-          <label for="password" class="colspan--two">Login</label>
+          <label for="password" class="colspan--two">
+            <i class="fa-solid fa-key"></i>
+            Login
+          </label>
           <input
             type="password"
             name="password"

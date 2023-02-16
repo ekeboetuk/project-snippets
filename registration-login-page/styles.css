@@ -132,17 +132,17 @@ input {
   color: #CCCCCC;
 }
 
+/*** Buttons **/
 .button--primary {
   font-family: 'ubuntu', sans-serif;
   font-weight: 600;
   background-color: #385d7f;
   padding: 20px 40px;
-  margin-top: 20px;
+  margin: 10px auto;
   border: 0px;
   border-radius: 40px;
   color:#FFFFFF;
   align-self: center;
-  /*grid-area: 3 / 1 / span 1 / span 2;*/
 }
 
 .button--primary:hover {
@@ -158,7 +158,7 @@ input {
   gap: 10px 20px;
   justify-content: center;
   align-content: center;
-  border-radius: 0 0 0px 0px;
+  border-radius: 0 0 10px 10px;
 }
 
 
