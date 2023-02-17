@@ -45,93 +45,107 @@
       </div>
     </div>
     <div class="content">
-      <div class="container">
-        <div class="section--header">
-          <h5>Membership Registration Form</h5>
+      <div class="container with--sidebar">
+        <div class="main--content">
+          <div class="section--header">
+            <h5>Membership Registration Form</h5>
+          </div>
+          <form class="registration--form">
+            <label for="firstname" class="colspan--two">
+              <i class="fa-solid fa-user"></i>
+              Names
+            </label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Last Name"
+            />
+            <label for="email" class="colspan--two">
+              <i class="fa-solid fa-id-card"></i>
+              Contact
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail Addresses"
+            />
+            <input
+              type="number"
+              name="mobile"
+              id="mobile"
+              placeholder="Mobile Number"
+            />
+            <input
+              type="address"
+              name="address"
+              id="address"
+              placeholder="Address Line 1"
+              class="colspan--two"
+            />
+            <input
+              type="address"
+              name="address2"
+              id="address2"
+              placeholder="Address Line 2"
+              class="colspan--two"
+            />
+            <input type="text" name="city" id="city" placeholder="City" />
+            <input type="text" name="region" id="region" placeholder="Region" />
+            <input
+              type="text"
+              name="postcode"
+              id="postcode"
+              placeholder="Postal/Zip Code"
+            />
+            <input
+              type="text"
+              name="country"
+              id="country"
+              placeholder="Country"
+            />
+            <label for="password" class="colspan--two">
+              <i class="fa-solid fa-key"></i>
+              Login
+            </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Confirm Password"
+            />
+            <button class="button--primary colspan--two">
+              Submit Registration
+            </button>
+          </form>
+          <div class="form--footer">
+            <p>Already A Member? <a href="./login.html">Login Here</a></p>
+          </div>
         </div>
-        <form class="registration--form">
-          <label for="firstname" class="colspan--two">
-            <i class="fa-solid fa-user"></i>
-            Names
-          </label>
-          <input
-            type="text"
-            name="firstname"
-            id="firstname"
-            placeholder="First Name"
-          />
-          <input
-            type="text"
-            name="lastname"
-            id="lastname"
-            placeholder="Last Name"
-          />
-          <label for="email" class="colspan--two">
-            <i class="fa-solid fa-id-card"></i>
-            Contact
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="E-mail Addresses"
-          />
-          <input
-            type="number"
-            name="mobile"
-            id="mobile"
-            placeholder="Mobile Number"
-          />
-          <input
-            type="address"
-            name="address"
-            id="address"
-            placeholder="Address Line 1"
-            class="colspan--two"
-          />
-          <input
-            type="address"
-            name="address2"
-            id="address2"
-            placeholder="Address Line 2"
-            class="colspan--two"
-          />
-          <input type="text" name="city" id="city" placeholder="City" />
-          <input type="text" name="region" id="region" placeholder="Region" />
-          <input
-            type="text"
-            name="postcode"
-            id="postcode"
-            placeholder="Postal/Zip Code"
-          />
-          <input
-            type="text"
-            name="country"
-            id="country"
-            placeholder="Country"
-          />
-          <label for="password" class="colspan--two">
-            <i class="fa-solid fa-key"></i>
-            Login
-          </label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Confirm Password"
-          />
-          <button class="button--primary colspan--two">
-            Submit Registration
-          </button>
-        </form>
-        <div class="form--footer">
-          <p>Already A Member? <a href="./login.html">Login Here</a></p>
+        <div class="side--bar">
+          <h4 class="section--header">Our Core Services</h4>
+          <div class="sidebar--card">
+            <ul>
+              <li>Website Designs</li>
+              <li>Maintenance</li>
+              <li>Computer Supplies Services</li>
+              <li>Software Development</li>
+              <li>Training</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

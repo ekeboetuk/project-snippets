@@ -99,10 +99,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #0cce23;
 }
 
-.content {
-  padding: 40px;
-}
-
 .site--header {
   margin: 0 auto;
   padding: 80px 0;
@@ -114,12 +110,39 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+.content .container {
+  padding: 40px 20px;
+  display: grid;
+}
+
+.content .container.with--sidebar {
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.side--bar {
+  margin-left: 20px;
+}
+
+.sidebar--card {
+  padding: 18px;
+  background-color: #2a4d6e;
+  color: #FFFFFF;
+  border-top: 1px solid #0cce23
+}
+
+.sidebar--card ul {
+  list-style-type: none;
+  line-height: 2;
+}
+
 .section--header {
   background-color:#385d7f;
   color:#FFFFFF;
-  padding: 20px 20px;
+  padding: 10px 10px;
   text-align: center;
-  border-radius: 10px 10px 0 0;
+  border-radius: 0px 0px 0 0;
 }
 
 .login--form {
@@ -129,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 400px;
   display: flex;
   flex-flow: column;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 .login--form--content {
@@ -232,7 +255,7 @@ input[name="city"] {
   gap: 20px 10px;
   justify-content: center;
   align-content: center;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 0px 0px;
 }
 
 
@@ -242,11 +265,23 @@ input[name="city"] {
 }
 
 /*** Media Screen Layout **/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   .registration--form {
     display: flex;
     flex-flow: column;
   }
+
+  .content .container.with--sidebar {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .side--bar {
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+  
 }
 
 #footer {
