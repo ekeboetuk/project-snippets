@@ -25,8 +25,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav--header {
   height: 80px;
+  color: #FFFFFF;
   background-color:#385d7f;
-  margin-bottom: 40px;
   box-shadow: 0px 0px 3px 1px #d1d1d1;
   border-bottom: 1px solid #0cce23
 }
@@ -45,23 +45,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .header--text {
   margin-right: auto;
-  color:rgb(237, 237, 237);
   font-weight: 700;
   font-size: 1.5rem;
-}
-
-.nav, .dropdown--content  {
-  display: flex;
-  justify-content: flex-start;
-  list-style-type: none;
-  font-weight: 600;
-  text-transform: uppercase;
-  align-items: stretch;
-}
-
-.dropdown--menu {
-  position: relative;
-  align-self: center;
 }
 
 .nav li {
@@ -79,17 +64,31 @@ h1, h2, h3, h4, h5, h6 {
   padding: 30px 0px;
 }
 
-.nav li .dropdown--content {
-  display: none;
+.nav, .dropdown--content  {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  align-items: stretch;
 }
 
-.dropdown--menu:hover .dropdown--content {
-  display: block;
+.dropdown--menu {
+  position: relative;
+  align-self: center;
+}
+
+.nav li .dropdown--content {
+  display: none;
   background-color: #2a4d6e;
   position: absolute;
   top: 80px;
   left: 0px;
   width: 100%;
+}
+
+.dropdown--menu:hover .dropdown--content {
+  display: block;
 }
 
 .dropdown--menu li {
@@ -101,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content {
-  margin: 40px
+  padding: 40px;
 }
 
 .section--header {
@@ -120,7 +119,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-flow: column;
   border-radius: 10px;
-  margin-bottom: 20px;
 }
 
 .login--form--content {
@@ -155,13 +153,20 @@ input {
   font-style: italic;
   position: relative;
 }
-/**
-input[name="email"] {
+
+#login--email {
 background: #FFFFFF url("./fonticons/envelope-solid.svg") no-repeat;
 background-position: 15px 10px;
-background-size: 20px 20px;
+background-size: 15px 20px;
 }
 
+#login--password {
+  background: #FFFFFF url("./fonticons/unlock-keyhole-solid.svg") no-repeat;
+  background-position: 15px 10px;
+  background-size: 15px 20px;
+  }
+
+/**
 input[name="mobile"] {
   background: #FFFFFF url("./fonticons/square-phone-flip-solid.svg") no-repeat;
   background-position: 15px 10px;
@@ -183,6 +188,7 @@ input[name="city"] {
 
 .form--footer {
   text-align: center;
+  margin-top: 20px;
 }
 
 .form--footer a {
@@ -210,7 +216,6 @@ input[name="city"] {
 .registration--form {
   background-color: #ececec;
   padding: 20px;
-  margin-bottom: 40px;
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px 20px;
@@ -238,4 +243,12 @@ input[name="city"] {
     align-content: center;
     border-radius: 0 0 0px 0px;
   }
+}
+
+#footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #385d7f;
+  color:#CCCCCC;
+  font-size: 1rem;
 }
