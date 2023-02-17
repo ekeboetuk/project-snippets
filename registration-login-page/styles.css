@@ -5,7 +5,7 @@
 }
 
 body {
-  background: rgba(255,255,255,0.9) url('./pattern-bg.png') repeat;
+  background: rgba(255,255,255,0.9) url('./images/page-bg.png') repeat;
   background-size: 25%;
   background-blend-mode: lighten;
   font-family: 'ubuntu', sans-serif;
@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 20px;
 }
 
-.nav--header {
+.nav--bar {
   height: 80px;
   color: #FFFFFF;
   background-color:#385d7f;
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #0cce23
 }
 
-.nav--header .container {
+.nav--bar .container {
   height: 100%;
   display: flex;
   justify-content: flex-start;
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 10px;
 }
 
-.header--text {
+.nav--text {
   margin-right: auto;
   font-weight: 700;
   font-size: 1.5rem;
@@ -101,6 +101,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .content {
   padding: 40px;
+}
+
+.site--header {
+  margin: 0 auto;
+  padding: 80px 0;
+  background: #e0e1e1 url("./images/login-banner.jpg") no-repeat center center/cover;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .section--header {
