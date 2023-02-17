@@ -229,7 +229,7 @@ input[name="city"] {
   padding: 20px 40px;
   display: grid;
   grid-auto-columns: 40%;
-  gap: 10px 10px;
+  gap: 20px 10px;
   justify-content: center;
   align-content: center;
   border-radius: 0 0 10px 10px;
