@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color:#385d7f;
   margin-bottom: 40px;
   box-shadow: 0px 0px 3px 1px #d1d1d1;
+  border-bottom: 1px solid #0cce23
 }
 
 .nav--header .container {
@@ -49,23 +50,54 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
 }
 
-.nav {
+.nav, .dropdown--content  {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   list-style-type: none;
   font-weight: 600;
   text-transform: uppercase;
+  align-items: stretch;
+}
+
+.dropdown--menu {
+  position: relative;
+  align-self: center;
+}
+
+.nav li {
+  padding: 30px 20px;
 }
 
 .nav li:hover {
   background-color: #2a4d6e;
 }
 
-.nav li a {
+.nav a {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 0.65rem;
-  padding: 0 5px;
+  padding: 30px 0px;
+}
+
+.nav li .dropdown--content {
+  display: none;
+}
+
+.dropdown--menu:hover .dropdown--content {
+  display: block;
+  background-color: #2a4d6e;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  width: 100%;
+}
+
+.dropdown--menu li {
+  padding: 10px 20px;
+}
+
+.dropdown--menu li:hover {
+  background-color: #0cce23;
 }
 
 .content {
@@ -172,7 +204,7 @@ input[name="city"] {
 }
 
 .button--primary:hover {
-  background-color: #c41e63;
+  background-color: #0cce23;
 }
 
 .registration--form {
