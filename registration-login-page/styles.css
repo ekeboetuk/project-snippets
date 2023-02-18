@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 20px;
 }
 
-.nav--bar {
+#nav--bar {
   height: 80px;
   color: #FFFFFF;
   background-color:#385d7f;
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #0cce23
 }
 
-.nav--bar .container {
+#nav--bar .container {
   height: 100%;
   display: flex;
   justify-content: flex-start;
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #0cce23;
 }
 
-.site--header {
+#site--header {
   margin: 0 auto;
   padding: 80px 0;
   background: #e0e1e1 url("./images/login-banner.jpg") no-repeat center center/cover;
@@ -110,26 +110,34 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-.content .container {
+#content .container {
   padding: 40px 20px;
   display: grid;
 }
 
-.content .container.with--sidebar {
+#content .container.with--sidebar {
   padding: 40px 20px;
   display: grid;
   grid-template-columns: 70% 30%;
 }
 
-.side--bar {
+#side--bar {
   margin-left: 20px;
 }
 
 .sidebar--card {
   padding: 18px;
+  border-top: 1px solid #0cce23
+}
+
+.dark {
   background-color: #2a4d6e;
   color: #FFFFFF;
-  border-top: 1px solid #0cce23
+}
+
+.light {
+  background-color: #cecece;
+  color: #000000;
 }
 
 .sidebar--card ul {
