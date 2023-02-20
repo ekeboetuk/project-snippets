@@ -204,7 +204,7 @@ input {
 }
 
 input:focus {
-  border: 1px solid #0cce23;
+  outline-color: #0cce23;
 }
 
 #login--email {
