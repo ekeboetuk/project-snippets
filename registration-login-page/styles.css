@@ -5,8 +5,7 @@
 }
 
 body {
-  background: rgba(255,255,255,0.9) url('./images/page-bg.png') repeat;
-  background-size: 25%;
+  background: rgba(255,255,255,0.9) url('./images/page-bg.png') top left/25% fixed;
   background-blend-mode: lighten;
   font-family: 'ubuntu', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -39,14 +38,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header--logo {
-  max-width: 100px;
+  max-width: 60px;
   margin-right: 10px;
 }
 
 .nav--text {
   margin-right: auto;
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1.3rem;
 }
 
 .nav li {
@@ -204,6 +203,10 @@ input {
   position: relative;
 }
 
+input:focus {
+  border: 1px solid #0cce23;
+}
+
 #login--email {
 background: #FFFFFF url("./fonticons/envelope-solid.svg") no-repeat;
 background-position: 15px 10px;
@@ -236,6 +239,17 @@ input[name="city"] {
 }
 */
 
+.registration--form {
+  background-color: #ececec;
+  padding: 20px 40px;
+  display: grid;
+  grid-auto-columns: 40%;
+  gap: 20px 10px;
+  justify-content: center;
+  align-content: center;
+  border-radius: 0 0 0px 0px;
+}
+
 .form--footer {
   text-align: center;
   margin-top: 20px;
@@ -261,17 +275,6 @@ input[name="city"] {
 
 .button--primary:hover {
   background-color: #0cce23;
-}
-
-.registration--form {
-  background-color: #ececec;
-  padding: 20px 40px;
-  display: grid;
-  grid-auto-columns: 40%;
-  gap: 20px 10px;
-  justify-content: center;
-  align-content: center;
-  border-radius: 0 0 0px 0px;
 }
 
 
@@ -301,6 +304,11 @@ input[name="city"] {
     display: grid;
     grid-template-columns: auto;
   }
+
+.registration--form {
+  display: flex;
+  flex-direction: column;
+}
 
   #side--bar {
     margin-left: 0px;
