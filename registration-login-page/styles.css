@@ -278,7 +278,12 @@ input[name="city"] {
 }
 
 
-/*** Grid Layout **/
+/***Layout **/
+#clock-display {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .colspan--two {
   grid-column: 1 / 3;
 }
